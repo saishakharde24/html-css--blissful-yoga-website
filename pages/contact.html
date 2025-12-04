@@ -1,8 +1,422 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CONTACT PAGE</title>
-   <style></style>
-    </head>
-   </body>
+
+<head>
+  <title>Contact Us</title>
+</head>
+<style>
+  .navbar {
+    width: 1440px;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+    position: fixed;
+    top: 0px;
+    left: 0px
+  }
+
+  .logo {
+    font-size: 22px;
+    font-weight: 600;
+    color: #121312;
+  }
+
+  .navbar {
+    width: 1440px;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+    position: fixed;
+    top: 0px;
+    left: 0px
+  }
+
+  .logo {
+    font-size: 22px;
+    font-weight: 600;
+    color: #121312;
+  }
+
+  .nav-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+  }
+
+  .main-page {
+    padding-right: 5px 30px 0px 30px;
+  }
+
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
+
+  .item {
+    background-color: white;
+    height: 430px;
+    width: 500px;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 40px 40px 10px 50px;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .images {
+    display: inline-flexbox;
+  }
+
+  .proj-sub-information {
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px 0px 20px;
+  }
+
+  .info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+
+  }
+
+  .item2 {
+    background-color: #b1e3fd;
+    height: 430px;
+    width: 500px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: 40pxpx;
+  }
+
+  .heading2 {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 200;
+    padding: 20px 5px 10px 20px;
+    margin-top: 30px;
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    border-color: 1px solid rgb(19, 17, 17);
+  }
+
+  .user-name {
+    background-color: white;
+    color: rgb(104, 101, 101);
+    padding: 5px 320px 5px 10px;
+    margin: 25px 10px 10px 10px;
+  }
+
+  .user-info2 {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-message {
+    background-color: white;
+    color: rgb(104, 101, 101);
+    padding: 5px 300px 100px 10px;
+    margin: 10px 10px 20px 10px;
+  }
+
+  .send-button {
+    background-color: #3366b2;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    margin: 10px;
+    border-radius: 20px;
+  }
+
+  .contact-section {
+    padding: 50px 0;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-container {
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .meet-box,
+  .form-box {
+    background: white;
+    padding: 35px 40px;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .meet-box {
+    text-align: center;
+  }
+
+  .meet-box h2 {
+    margin-bottom: 25px;
+  }
+
+  .info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer {
+    background: #84c2cc;
+    color: black;
+    padding: 40px 20px 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: 1200px;
+    margin-left: 250px;
+
+  }
+
+  .footer-box {
+    flex: 1 1 250px;
+  }
+
+  .footer-box h3 {
+    margin-bottom: 15px;
+    color: #FFD78A;
+    font-size: 20px;
+  }
+
+  .footer-box p {
+    font-size: 15px;
+
+  }
+
+  .footer-box ul {
+    padding: 0;
+  }
+
+  .footer-box ul li {
+    margin: 8px 0;
+  }
+
+  .footer-box ul li a {
+    color: #070707;
+    transition: 0.3s;
+  }
+
+  .footer-box ul li a:hover {
+    color: #E0970E;
+    padding-left: 5px;
+  }
+
+  .social-links a {
+    font-size: 22px;
+    margin-right: 10px;
+    color: #FFD78A;
+    transition: 0.3s;
+  }
+
+  .social-links a:hover {
+    color: white;
+  }
+
+  .newsletter {
+    text-align: center;
+    margin: 40px auto;
+    width: 600px;
+  }
+
+  .newsletter-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .newsletter input {
+    padding: 12px;
+    width: 60%;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .newsletter button {
+    padding: 12px 20px;
+    border: none;
+    background: #ECA92E;
+    color: black;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .newsletter button:hover {
+    background: white;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 10px;
+  }
+
+  .footer-bottom p {
+    font-size: 14px
+  }
+
+  .social-icons img {
+    width: 28px;
+    margin: 0 5px;
+    transition: 0.3s;
+  }
+</style>
+
+</body>
+<div>
+  <nav class="navbar">
+    <div class="logo">Blissful Yoga Hub</div>
+
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="types.html">Types</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="signup.html">Signup</a>
+    </div>
+  </nav>
+</div>
+<img src="../images/contact.jpg" height="350px" width="1497px" class="main-page" />
+<div class="container">
+  <div class="item">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.060111131785!2d73.76038467464845!3d20.005991681399607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb994f54f533%3A0xef938d11bd1d4c9e!2sCollege%20Rd%2C%20Nashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1764781768917!5m2!1sen!2sin"
+      width="490" height="430" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="item">
+    <span class="heading">Meet Us</span>
+
+    <diV class="proj-information">
+
+      <div class="proj-sub-information">
+        <img src="../images/phone-call.png" height="20px" class="img" />
+        <span class="info"><a href="callus:+466723723666">+466723723666</a></span>
+      </div>
+
+      <div class="proj-sub-information">
+        <img src="../images/mail.png" height="20px" class="img" />
+        <span class="info"><a href="mailto:blissfulyogahub07@gmail.com">blissfulyogahub07@gmail.com</a></span>
+      </div>
+
+      <div class="proj-sub-information">
+        <img src="../images/location.png" height="20px" class="img" />
+        <span class="info"><a href="map:Collage Road, Nashik">Collage Road, Nashik</a></span>
+      </div>
+
+    </diV>
+  </div>
+
+  <div class="item2">
+    <span class="heading2">Contact</span>
+    <div class="user-info">
+      <span class="user-name">Name</span>
+    </div>
+    <div class="user-info2">
+      <span class="user-message">Message</span>
+    </div>
+    <div class="">
+      <span class="send-button">Send</span>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-box">
+      <h3>Blissful Yoga Hub</h3>
+      <p>Your sanctuary for peace, balance, and holistic well-being.
+        We offer yoga, meditation, wellness workshops and healing sessions for all age groups.</p>
+    </div>
+
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="types.html">Our Programs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+      <p><b>Email:</b><a href="mailto:blissfulyogahub07"> blissfulyogahub@gmail.com</a><br /></p>
+      <p><b>Phone:</b> <a href="callus">+91 466723723666</a></p>
+      <p><b>Address:</b>College road,Nashik</p>
+    </div>
+  </div>
+
+  <div align="center">
+    <div class="social-icons">
+      <img src="../images/insta.jpg" alt="insta-img" />
+      <img src="../images/facebook.jpg" alt="facebook-img" />
+      <img src="../images/telegram.jpg" alt="telegram-img" />
+    </div>
+  </div>
+
+  <div class="newsletter">
+    <h3>Subscribe to Our Newsletter</h3>
+    <div class="newsletter-box">
+      <input type="email" placeholder="Enter your email...">
+      <button>Subscribe</button>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Blissful Yoga Hub | All Rights Reserved</p>
+  </div>
+
+</footer>
+
+</body>
+
 </html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Page</title>
+    <style>
+        .navbar {
+            width: 1440px;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            box-shadow: 0 2px 8px rgb(0, 0, 0);
+            position: fixed;
+            top: 0px;
+            left: 0px
+        }
+
+
+        .logo {
+            font-size: 22px;
+            font-weight: 600;
+            color: #121312;
+        }
+
+        .nav-links {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
+        
+        body {
+            background-color: #dee8eb;
+        }
+
+        .welcome {
+            text-align: center;
+            padding: 10px;
+            width: 1500px;
+            background-color: #dee8eb;
+        }
+
+        .cards-section {
+            padding: 40px;
+            background: #bbcfdc;
+            text-align: center;
+            width: 1440PX;
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: rgb(9, 9, 9);
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 300px;
+            background: #E3E3E3;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgb(0, 0, 0);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: #e2d4d4;
+        }
+
+        .service {
+            border-radius: 10px;
+        }
+
+        .card-btn {
+            display: inline-block;
+            background: #1B3C53;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 6px;
+        }
+
+        .card-btn:hover {
+            background: #492f49;
+            transform: scale(1.08);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .trainers {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .trainers h2 {
+            font-size: 32px;
+            color: rgb(9, 9, 9);
+            margin-bottom: 5px;
+        }
+
+        .team-intro {
+            font-size: 16px;
+            color: rgb(9, 9, 9);
+            margin-bottom: 30px;
+        }
+
+        .trainer-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .trainer-card {
+            width: 260px;
+            background: hsl(203, 53%, 82%);
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgb(0, 0, 0);
+            padding: 25px 15px;
+            text-align: center;
+
+        }
+
+        .trainer-card:hover {
+            box-shadow: 0 4px 15px rgb(0, 0, 0);
+            background: hsl(202, 25%, 58%);
+        }
+
+
+        .trainer-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #f1f1f1;
+            margin-bottom: 15px;
+        }
+
+        .trainer-card h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #0a0a0a;
+        }
+
+        .trainer-card p {
+            font-size: 14px;
+            color: #0e0e0e;
+            margin-bottom: 15px;
+        }
+
+        .social-icons img {
+            width: 28px;
+            margin: 0 5px;
+            transition: 0.3s;
+        }
+
+        .footer {
+            background: #5F97A4;
+            color: #e0e0e0;
+            padding: 40px 20px 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            width: 1200px;
+            margin-left: 250px;
+
+        }
+
+        .footer-box {
+            flex: 1 1 250px;
+        }
+
+        .footer-box h3 {
+            margin-bottom: 15px;
+            color: #ffd78a;
+            font-size: 20px;
+        }
+
+        .footer-box p {
+            font-size: 15px;
+
+        }
+
+        .footer-box ul {
+            padding: 0;
+        }
+
+        .footer-box ul li {
+            margin: 8px 0;
+        }
+
+        .footer-box ul li a {
+            color: #cccccc;
+            transition: 0.3s;
+        }
+
+        .footer-box ul li a:hover {
+            color: #ffd78a;
+            padding-left: 5px;
+        }
+
+        .social-links a {
+            font-size: 22px;
+            margin-right: 10px;
+            color: #ffd78a;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: white;
+        }
+
+        .newsletter {
+            text-align: center;
+            margin: 40px auto;
+            width: 600px;
+        }
+
+        .newsletter-box {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .newsletter input {
+            padding: 12px;
+            width: 60%;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .newsletter button {
+            padding: 12px 20px;
+            border: none;
+            background: #ffd78a;
+            color: black;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .newsletter button:hover {
+            background: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #333;
+            margin-top: 30px;
+            padding-top: 10px;
+        }
+
+        .footer-bottom p {
+            font-size: 14px
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <nav class="navbar">
+            <div class="logo">Blissful Yoga Hub</div>
+
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="types.html">Types</a>
+                <a href="benefits.html">Benefits</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="signup.html">Signup</a>
+            </div>
+        </nav>
+    </div>
+
+
+    <img src="../images/about-main.jpeg" alt="about-logo" height="350px" width="1520px" />
+    <div class="welcome">
+        <h2>Why Choose US?</h2>
+        <p>
+            At Blissful Yoga Hub, we believe yoga is for everyone.
+            Our classes are designed to bring positivity, flexibility, and peace into your daily life.
+            Join us to relax, stretch, breathe, and explore the journey toward a healthier you.
+        </p>
+    </div>
+
+    <div class="cards-section">
+        <h2 class="section-title">Our Programs</h2>
+
+        <div class="cards-container">
+
+
+            <div class="card">
+                <img src="../images/our-services.jpg" alt="our-services-img" class="service" height="100px"
+                    width="300px">
+                <h3>Our Services</h3>
+                <p>We offer calming yoga sessions, meditation classes and holistic wellness programs designed for all
+                    age groups.</p>
+
+                <a href="gallery.html" class="card-btn">Read More</a>
+            </div>
+
+            <div class="card">
+                <img src="../images/schedule.jpg" alt="schedule" class="service" height="100px" width="300px">
+                <h3>Class Schedule</h3>
+                <p>• Morning Batch: 6:00 AM-7:00 AM</p>
+                <p>• Evening Batch: 6:00 PM-7:30 PM</p>
+                <a href="contact.html" class="card-btn">Learn More</a>
+            </div>
+
+
+
+            <div class="card">
+                <img src="../images/training-workshop.jpg" alt="training-workshop" class="service" height="100px"
+                    width="300px">
+                <h3>Workshops</h3>
+                <p>Join our live workshops to improve flexibility, learn breathing practices, and enhance your inner
+                    balance.</p>
+                <a href="types.html" class="card-btn">Join Now</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="trainers">
+        <h2>Our Trainers</h2>
+        <p class="team-intro">Meet our certified yoga instructors who guide you with love, care and expertise.</p>
+        <div class="trainer-cards">
+            <div class="trainer-card">
+                <img src="../images/trainer-1.jpg" alt="trainer-1" class="trainer-img">
+                <h3>Meera Sharma</h3>
+                <p>Hatha Yoga Instructor</p>
+                <div class="social-icons">
+                    <img src="../images/insta.png" alt="insta-img" />
+                    <img src="../images/facebook.png" alt="facebook-img" />
+                    <img src="../images/telegram.png" alt="telegram-img" />
+                </div>
+            </div>
+            <div class="trainer-card">
+                <img src="../images/trainer-2.jpg" alt="trainer-2" class="trainer-img">
+                <h3>Aarya Verma</h3>
+                <p>Meditation & Wellness Coach</p>
+
+                <div class="social-icons">
+                    <img src="../images/insta.png" alt="insta-img" />
+                    <img src="../images/facebook.png" alt="facebook-img" />
+                    <img src="../images/telegram.png" alt="telegram-img" />
+
+                </div>
+            </div>
+
+            <div class="trainer-card">
+                <img src="../images/trainer-3.jpg" alt="trainer-3" class="trainer-img">
+                <h3>Parth Arora</h3>
+                <p>Power Yoga Expert</p>
+
+                <div class="social-icons">
+                    <img src="../images/insta.png" alt="insta-img" />
+                    <img src="../images/facebook.png" alt="facebook-img" />
+                    <img src="../images/telegram.png" alt="telegram-img" />
+
+
+                </div>
+            </div>
+
+        </div>
+    </div><br />
+
+    <footer class="footer">
+        <div class="footer-container">
+
+
+            <div class="footer-box">
+                <h3>Blissful Yoga Hub</h3>
+                <p>Your sanctuary for peace, balance, and holistic well-being.
+                    We offer yoga, meditation, wellness workshops and healing sessions for all age groups.</p>
+            </div>
+
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="types.html">Our Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p><b>Email:</b><a href="mailto:blissfulyogahub07"> blissfulyogahub@gmail.com</a><br /></p>
+                <p><b>Phone:</b> <a href="callus">+91 466723723666</a></p>
+                <p><b>Address:</b>College road,Nashik</p>
+            </div>
+        </div>
+        <div align="center">
+            <div class="social-icons">
+                <img src="../images/insta.png" alt="insta-img" />
+                <img src="../images/facebook.png" alt="facebook-img" />
+                <img src="../images/telegram.png" alt="telegram-img" />
+            </div>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <div class="newsletter-box">
+                <input type="email" placeholder="Enter your email...">
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Blissful Yoga Hub | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
