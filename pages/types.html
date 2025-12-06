@@ -270,6 +270,52 @@
             transition: 0.3s;
         }
 
+        .video-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.video-cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-card {
+    width: 30%;
+    min-width: 260px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.video-card video {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.video-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.video-card p {
+    margin-top: 5px;
+    color: #555;
+    font-size: 15px;
+}
         .footer-bottom p {
             font-size: 14px
         }
@@ -283,12 +329,12 @@
 
             <div class="nav-links">
                 <a href="../index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="types.html">Types</a>
-                <a href="benefits.html">Benefits</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contact.html">Contact</a>
-                <a href="signup.html">Signup</a>
+                <a href="./about.html">About</a>
+                <a href="./types.html">Type</a>
+                <a href="./benefits.html">Benefits</a>
+                <a href="./gallary.html">Gallery</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./sgnup.html">Signup</a>
             </div>
         </nav>
     </div>
@@ -361,6 +407,35 @@
         <span class="title6">Garudasana</span>
         <img src="../images/garudasana.jpg" height="200px" width="250px" class="img6" />
     </div>
+    <div>
+       
+        <div class="video-section">
+    <h2 class="section-title">Our Yoga Sessions</h2>
+
+    <div class="video-cards-container">
+
+       
+        <div class="video-card">
+            <video src="../videos/y_video-1.mp4" controls></video>
+            <h3>Morning Group Yoga</h3>
+            <p>Start your day with refreshing yoga postures and breathing techniques.</p>
+        </div>
+        <div class="video-card">
+            <video src="../videos/y_video-2.mp4" controls></video>
+            <h3>Guided Meditation</h3>
+            <p>Relax your mind through calming guided meditation sessions.</p>
+        </div>
+
+       
+        <div class="video-card">
+            <video src="../videos/y_video-3.mp4" controls></video>
+            <h3>Stretch Exercise</h3>
+            <p>Improve flexibility and relieve stress with gentle stretch workouts.</p>
+        </div>
+
+    </div>
+</div>
+        </div>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-box">
