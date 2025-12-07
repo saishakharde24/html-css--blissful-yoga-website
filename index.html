@@ -19,11 +19,17 @@
             left: 0px
         }
 
-
         .logo {
-            font-size: 22px;
-            font-weight: 600;
-            color: #121312;
+            display: flex;
+            gap:10px;
+            align-items: center;
+        }
+
+        .logo img{
+            width: 35px;
+            height:35px;
+            border-radius: 50%;
+
         }
 
         .nav-links {
@@ -183,7 +189,6 @@ gap:20px;
     font-size: 20px;
 }
 
-
 .intro {
     text-align: center;
     padding: 40px 20px;
@@ -241,12 +246,69 @@ gap:20px;
     margin-top: 6px;
     font-size: 14px;
 }
+@media (max-width: 992px) {
+
+    
+    .navbar {
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        gap: 18px;
+        font-size: 15px;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    
+    .intro p {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    
+    .info-cards {
+        justify-content: center;
+    }
+    .infocard {
+        width: 45%;
+    }
+
+   
+    .footer-container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-box {
+        flex: 1 1 300px;
+    }
+
+    .newsletter {
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+
+    
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        height: auto;
+    }
+}
 </style>
    <body>
     <div>
       <div>
         <nav class="navbar">
-            <div class="logo">Blissful Yoga Hub</div>
+            <div class="logo">
+                <img src="c:\Users\Shobhit\Downloads\main-logo.jpeg" alt="yoga-logo">
+            <span>Blissful Yoga Hub</span></div>
 
             <div class="nav-links">
                 <a href="../index.html">Home</a>
